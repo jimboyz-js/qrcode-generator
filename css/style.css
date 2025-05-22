@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(248, 249, 248);;
+}
+
+.container{
+    background-color: rgb(248, 249, 248);
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+.container img{
+    max-width: 50%;
+    margin: 2rem;
+}
+
+.container .form-container{
+    background-color: rgb(248, 249, 248);
+    display: flex;
+    flex-direction: row;;
+    align-items: center;
+    max-width: 660px;
+    height: 67vh;
+    margin: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(12, 14, 14);
+    z-index: 1000;
+}
+
+.container .form-container .form{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 2px;
+    width: 80%;
+    height: 100%;
+}
+
+.container .form-container .description{
+    background-color: rgba(2, 6, 16, 0.776);
+    max-width: 350px;
+    height: 100%;
+    border-radius: 10px 20px 500px 10px;
+    box-shadow: 0 0 1px rgba(2, 6, 16, 0.776);
+}
+
+.container .form-container .description h2 {
+    color: rgb(250, 248, 248);
+    margin: 25% 50px 0;
+    padding-bottom: 20px;
+}
+
+.container .form-container .description p {
+    color: rgb(250, 248, 248);
+    margin-left: 50px;
+    margin-right: 7px;
+    line-height: 1.2;
+}
+
+.form h2{
+    color: rgb(2, 6, 16, 0.776);
+    text-align: center;
+    margin: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 7px;
+    margin-top: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+    color: black;
+    outline: none;
+    background-color: rgb(248, 249, 248);
+    font-size: 1.0em;
+    font-weight: 300;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 7px;
+    margin-top: 3rem;
+    border-radius: .9rem;
+    background-color: rgba(2, 6, 16, 0.776);
+    box-shadow: 0 0 1px rgba(2, 6, 16, 0.776);
+    cursor: pointer;
+    color: rgb(250, 248, 248);
+    font-size: 1.0em;
+    font-weight: 300;
+    transition: .2s;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 2px rgba(2, 6, 16, 0.776);
+    background-color: rgb(2, 6, 16);
+}
+
+.form h3{
+    color: black;
+    font-size: .8em;
+    font-weight: normal;
+    text-align: center;
+    margin: 15px 20px;
+}
+
+.form h3 span{
+    color: blue;
+    cursor: pointer;
+}
+
+.form h3 span:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:768px){
+   
+    .container{
+        justify-content: center;
+    }
+    
+    .container img{
+        display: none;
+    }
+
+    .container .form-container .description{
+        display: none;
+    }
+
+    .container .form-container .form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1190px){
+    .container img{
+        max-width: 520px;
+        max-height: 300px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width:1060px){
+    .container img{
+        display: none;
+    }
+}
